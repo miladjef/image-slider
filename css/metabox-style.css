@@ -1,0 +1,82 @@
+#hmis-metabox li{
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px dashed #d4d4d4;
+    position: relative;
+}
+#hmis-metabox ul img{
+    width: 100px;
+    height: 100px;
+}
+
+#hmis-metabox li.slide:after{
+    position: absolute;
+    content: attr(data-content);
+    width: 50%;
+    left: 25%;
+    top: 40%;
+    color: #FFF;
+    background: rgba(0,0,0,.65);
+    padding: 2px 5px;
+    z-index: 999;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+#hmis-metabox li.slide:hover:after{
+    opacity: 1;
+}
+
+li.hmis-add-slide{
+    color: #d4d4d4;
+}
+
+li.hmis-add-slide:hover{
+    color: #000;
+}
+
+/*Lightbox Style*/
+#hmis-lightbox-data{
+    display: none;
+    background-color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    min-width: 400px;
+    padding: 15px;
+}
+
+#hmis-lightbox-data p.image-container{
+    text-align: center;
+    border: 3px dashed #CCC;
+}
+
+input.text-field{
+    width: 100%;
+}
+
+#hmis-lightbox-data img{
+    cursor: pointer;
+}
+
+#hmis-lightbox-data img.not-selected{
+    opacity: .4;
+}
+
+#hmis-lightbox-data img.not-selected:hover{
+    opacity: 1;
+}
+
+/*Slider settings*/
+#hmis_slider_settings label{
+    width: 100px;
+    display: inline-block;
+}
